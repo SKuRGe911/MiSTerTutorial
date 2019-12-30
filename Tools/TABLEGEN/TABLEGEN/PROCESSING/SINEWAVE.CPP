@@ -1,0 +1,106 @@
+#include "GRNMPCH.H"
+//////////////////////////////////////////////////////////////////////////
+double DegreesToRadians(double degrees)
+{
+	const static double PI = 4 * atan(1);
+	return (2 * PI * degrees) / 360;
+}
+//////////////////////////////////////////////////////////////////////////
+BOOL ProcSineWave(CString outnamepath, DWORD maxvalue, DWORD midvalue) {
+
+	//////////////////////////////////////////////////////////////////////////
+	CFile outfile;
+	//////////////////////////////////////////////////////////////////////////
+	if (outfile.Create(outnamepath, GENERIC_WRITE, FILE_SHARE_READ, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL) == FALSE) {
+		MessageBoxW(NULL, L"COULD NOT OPEN OUTPUT FILE", L"GENERATE ERROR!", MB_OK | MB_ICONERROR);
+		return FALSE;
+	}
+	//////////////////////////////////////////////////////////////////////////
+	BYTE fast_sin_table[91];
+	//////////////////////////////////////////////////////////////////////////
+	// Build sin table
+	//////////////////////////////////////////////////////////////////////////
+	unsigned num_results = 91;
+	for (unsigned i = 0; i < num_results; i++) {
+		double value = DegreesToRadians(i);
+		double res = std::sin(value) * maxvalue;
+		fast_sin_table[i] = static_cast<BYTE>(res);
+	}
+	//////////////////////////////////////////////////////////////////////////
+	CStringA text;
+	DWORD count=0;
+	text.Format("\tDW\t");
+	for (DWORD i = 0; i < 91; i++) {
+		text.Format("%s%c$%05X", text,count==0?'\t':',', (BYTE)fast_sin_table[i]);
+		count++;
+		if (count >= 8) {
+			count = 0;
+			text.Format("%s\n", text);
+			outfile.Write(text.GetBuffer(text.GetLength()), text.GetLength());
+			text.ReleaseBuffer();
+			text.Format("\tDW\t");
+		}
+	}
+	if (count < 8) {
+		text.Format("%s\n", text);
+		outfile.Write(text.GetBuffer(text.GetLength()), text.GetLength());
+		text.ReleaseBuffer();
+	}
+	//////////////////////////////////////////////////////////////////////////
+	outfile.Close();
+	//////////////////////////////////////////////////////////////////////////
+	return TRUE;
+	//////////////////////////////////////////////////////////////////////////
+
+
+}
+//////////////////////////////////////////////////////////////////////////
+BOOL ProcCosineWave(CString outnamepath, DWORD maxvalue, DWORD midvalue) {
+
+	//////////////////////////////////////////////////////////////////////////
+	CFile outfile;
+	//////////////////////////////////////////////////////////////////////////
+	if (outfile.Create(outnamepath, GENERIC_WRITE, FILE_SHARE_READ, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL) == FALSE) {
+		MessageBoxW(NULL, L"COULD NOT OPEN OUTPUT FILE", L"GENERATE ERROR!", MB_OK | MB_ICONERROR);
+		return FALSE;
+	}
+	//////////////////////////////////////////////////////////////////////////
+	BYTE fast_cos_table[91];
+	//////////////////////////////////////////////////////////////////////////
+	// Build cos table
+	//////////////////////////////////////////////////////////////////////////
+	unsigned num_results = 91;
+	for (unsigned i = 0; i < num_results; i++) {
+		double value = DegreesToRadians(i);
+		double res = std::cos(value) * maxvalue;
+		fast_cos_table[i] = static_cast<BYTE>(res);
+	}
+	//////////////////////////////////////////////////////////////////////////
+	CStringA text;
+	DWORD count = 0;
+	text.Format("\tDW\t");
+	for (DWORD i = 0; i < 91; i++) {
+		text.Format("%s%c$%05X", text, count == 0 ? '\t' : ',', (BYTE)fast_cos_table[i]);
+		count++;
+		if (count >= 8) {
+			count = 0;
+			text.Format("%s\n", text);
+			outfile.Write(text.GetBuffer(text.GetLength()), text.GetLength());
+			text.ReleaseBuffer();
+			text.Format("\tDW\t");
+		}
+	}
+	if (count < 8) {
+		text.Format("%s\n", text);
+		outfile.Write(text.GetBuffer(text.GetLength()), text.GetLength());
+		text.ReleaseBuffer();
+	}
+	//////////////////////////////////////////////////////////////////////////
+	outfile.Close();
+	//////////////////////////////////////////////////////////////////////////
+	return TRUE;
+	//////////////////////////////////////////////////////////////////////////
+
+
+}
+//////////////////////////////////////////////////////////////////////////

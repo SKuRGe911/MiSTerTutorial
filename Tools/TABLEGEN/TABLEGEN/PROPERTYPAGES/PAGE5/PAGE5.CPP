@@ -1,0 +1,105 @@
+#include "GRNMPCH.H"
+#include "PAGE5.H"
+#include "../../PROCESSING/PROCESSING.H"
+//////////////////////////////////////////////////////////////////////////
+using namespace HTL;
+//////////////////////////////////////////////////////////////////////////
+CPropertyPage5::CPropertyPage5(CString& filename, ATL::_U_STRINGorID title, bool IsExterior, bool EnableDoubleBuffer) :
+	CResizablePropertyPageImpl<CPropertyPage5>(title, IsExterior, EnableDoubleBuffer),
+	m_FileName(filename),
+	m_TextString(),
+	m_TextEditBox(NULL),
+	m_CharactersPerLineBox(NULL),
+	m_CharactersPerLineText(NULL),
+	m_CharactersPerLine(0)
+{
+
+}
+//////////////////////////////////////////////////////////////////////////
+CPropertyPage5::~CPropertyPage5(VOID)
+{
+
+}
+//////////////////////////////////////////////////////////////////////////
+BOOL CPropertyPage5::OnSetActive(VOID)
+{
+
+	//////////////////////////////////////////////////////////////////////////
+	GetPropertySheet().SetWizardButtons(PSWIZB_FINISH | PSWIZB_BACK);
+	//////////////////////////////////////////////////////////////////////////
+	return TRUE;
+	//////////////////////////////////////////////////////////////////////////
+
+}
+//////////////////////////////////////////////////////////////////////////
+INT_PTR CPropertyPage5::OnWizardFinish(VOID)
+{
+	//////////////////////////////////////////////////////////////////////////
+	//FINISH COMMAND														//
+	//////////////////////////////////////////////////////////////////////////
+	m_TextEditBox.Detach();
+	m_TextEditBox.Attach(GetDlgItem(IDC_EDIT_TEXT_INPUT));
+	//////////////////////////////////////////////////////////////////////////
+	m_TextEditBox.GetWindowText(m_TextString);
+	_AppSettings.WriteUserProfileString(GRNM_ASCII_TABLE_REGISTRY_SECTION, GRNM_ASCII_TABLE_TEXT_ENTRIES_REGISTRY_KEY, m_TextString);
+	//////////////////////////////////////////////////////////////////////////
+	m_CharactersPerLineBox.Detach();
+	m_CharactersPerLineBox.Attach(GetDlgItem(IDC_EDIT_CHARACTERS_PER_LINE));
+	CString cpl;
+	m_CharactersPerLineBox.GetWindowText(cpl);
+	wchar_t* cptr;
+	wchar_t* cptr_end;
+	DWORD cptr_sz = cpl.GetLength();
+	cptr = cpl.GetBuffer(cptr_sz);
+	cptr_end = cptr + cptr_sz;
+	m_CharactersPerLine = wcstol(cptr, &cptr_end, 10);
+	cpl.ReleaseBuffer();
+	_AppSettings.WriteUserProfileDword(GRNM_ASCII_TABLE_REGISTRY_SECTION, GRNM_ASCII_TABLE_CHARACTERS_PER_LINE_KEY, m_CharactersPerLine);
+	//////////////////////////////////////////////////////////////////////////
+	if (ProcTextString(m_FileName, m_TextString, m_CharactersPerLine) == FALSE) {
+		MessageBox(L"ERROR IN PROCESSING ASCII STRING", L"ERROR", MB_OK | MB_ICONERROR);
+		return FALSE;
+	}
+	//////////////////////////////////////////////////////////////////////////
+	return FALSE;
+	//////////////////////////////////////////////////////////////////////////
+
+}
+//////////////////////////////////////////////////////////////////////////
+LRESULT CPropertyPage5::OnInitDialog(HWND hWnd, LPARAM lParam)
+{
+	//////////////////////////////////////////////////////////////////////////
+	m_TextEditBox.Detach();
+	m_TextEditBox.Attach(GetDlgItem(IDC_EDIT_TEXT_INPUT));
+	CString Text = _AppSettings.GetUserProfileString(GRNM_ASCII_TABLE_REGISTRY_SECTION, GRNM_ASCII_TABLE_TEXT_ENTRIES_REGISTRY_KEY, GRNM_ASCII_TABLE_TEXT_DEFAULT);
+	m_TextEditBox.SetWindowText(Text);
+	m_TextEditBox.Invalidate(TRUE);
+	//////////////////////////////////////////////////////////////////////////
+	m_CharactersPerLineBox.Detach();
+	m_CharactersPerLineBox.Attach(GetDlgItem(IDC_EDIT_CHARACTERS_PER_LINE));
+	DWORD LastCPL = _AppSettings.GetUserProfileDword(GRNM_ASCII_TABLE_REGISTRY_SECTION, GRNM_ASCII_TABLE_CHARACTERS_PER_LINE_KEY, GRNM_ASCII_TABLE_CHARACTERS_PER_LINE_DEFAULT);
+	Text.Format(L"%d", LastCPL);
+	m_CharactersPerLineBox.SetWindowText(Text);
+	m_CharactersPerLineBox.Invalidate(TRUE);
+	//////////////////////////////////////////////////////////////////////////
+	m_CharactersPerLineText.Detach();
+	m_CharactersPerLineText.Attach(GetDlgItem(IDC_STATIC_CHARACTERS_PER_LINE_TEXT));
+	m_CharactersPerLineText.SetWindowTextW(L"Characters Per Line");
+	m_CharactersPerLineText.Invalidate(TRUE);
+	//////////////////////////////////////////////////////////////////////////
+	SetMsgHandled(FALSE);
+	//////////////////////////////////////////////////////////////////////////
+	return TRUE;
+	//////////////////////////////////////////////////////////////////////////
+
+}
+//////////////////////////////////////////////////////////////////////////
+BOOL CPropertyPage5::OnQueryCancel(VOID)
+{
+
+	//////////////////////////////////////////////////////////////////////////
+	return FALSE;
+	//////////////////////////////////////////////////////////////////////////
+
+}
+//////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28711.60
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TABLEGEN", "TABLEGEN\TABLEGEN.vcxproj", "{EA5B68D2-59B6-47DC-8F60-30FBC681D1BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA5B68D2-59B6-47DC-8F60-30FBC681D1BB}.Release|x64.ActiveCfg = Release|x64
+		{EA5B68D2-59B6-47DC-8F60-30FBC681D1BB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84609437-4FBC-4200-9F7E-4FCECB9B8589}
+	EndGlobalSection
+EndGlobal

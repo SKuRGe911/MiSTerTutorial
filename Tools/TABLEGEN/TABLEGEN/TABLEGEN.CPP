@@ -1,0 +1,214 @@
+#include "GRNMPCH.H"
+#include "TABLEGEN.H"
+#include "APPWINDOW/APPWINDOW.H"
+#include "PROCESSING/PROCESSING.H"
+//////////////////////////////////////////////////////////////////////////
+__declspec(selectany) WTL::CAppModule											_Module;
+__declspec(selectany) HTL::CAppSettings											_AppSettings;
+//////////////////////////////////////////////////////////////////////////
+#define APPNAME_GERANIUM _T("GERANIUM TABLE GENERATOR")
+//////////////////////////////////////////////////////////////////////////
+INT Run(INT nCmdShow = SW_SHOWDEFAULT)
+{
+	//////////////////////////////////////////////////////////////////////////
+	int nRet = 0;
+	//////////////////////////////////////////////////////////////////////////
+	CAppWindow AppWindow;
+	CMessageLoop theLoop;
+	_Module.AddMessageLoop(&theLoop);
+	//////////////////////////////////////////////////////////////////////////
+	if (AppWindow.Initialize(nCmdShow) == FALSE) {
+		return 0;
+	}
+	//////////////////////////////////////////////////////////////////////////
+	nRet = theLoop.Run();
+	//////////////////////////////////////////////////////////////////////////
+	if (AppWindow.UnInitialize() == FALSE) {
+		//return 0;
+	}
+	//////////////////////////////////////////////////////////////////////////
+	_Module.RemoveMessageLoop();
+	//////////////////////////////////////////////////////////////////////////
+	return 0;
+	//////////////////////////////////////////////////////////////////////////
+
+}
+//////////////////////////////////////////////////////////////////////////
+BOOL PrintUsageText(VOID) {
+	wcout << L"TABLEGEN -i INPUT -o OUTPUT [-b -v] [-w]";
+	return TRUE;
+}
+//////////////////////////////////////////////////////////////////////////
+BOOL PrintProcessingError(VOID) {
+	wcout << L"\nERROR:Processing Error\n";
+	return TRUE;
+}
+//////////////////////////////////////////////////////////////////////////
+BOOL PrintProcessingComplete(VOID) {
+	wcout << L"Processing Complete!\n";
+	return TRUE;
+}
+//////////////////////////////////////////////////////////////////////////
+BOOL PrintTooFewArguments(VOID) {
+	wcout << L"\nERROR:Invalid Number Of Arguments\n";
+	return TRUE;
+}
+//////////////////////////////////////////////////////////////////////////
+BOOL PrintCouldNotOpenInput(VOID) {
+	wcout << L"\nERROR:Input File Not Found\n";
+	return TRUE;
+}
+//////////////////////////////////////////////////////////////////////////
+BOOL PrintCouldNotOpenOutput(VOID) {
+	wcout << L"\nERROR:Output File Could Not Be Created\n";
+	return TRUE;
+}
+//////////////////////////////////////////////////////////////////////////
+int main(void) {
+	return wWinMain((HINSTANCE)GetCurrentProcess(), NULL, GetCommandLineW(), SW_SHOW);
+}
+//////////////////////////////////////////////////////////////////////////
+INT WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPWSTR lpstrCmdLine, INT nCmdShow)
+{
+	//////////////////////////////////////////////////////////////////////////
+	HRESULT hRes = S_OK;
+	INT nRet = EXIT_SUCCESS;
+	//////////////////////////////////////////////////////////////////////////
+	INT numargs;
+	LPWSTR* args = CommandLineToArgvW(lpstrCmdLine, &numargs);
+	if (numargs == 0 || numargs == 1) {
+		LocalFree(args);
+		HWND console = GetConsoleWindow();
+		FreeConsole();
+		CloseWindow(console);
+		//////////////////////////////////////////////////////////////////////////
+		if (IsWindows10OrGreater() == FALSE) {
+			MessageBoxW(NULL, L"WINDOWS 10 OR GREATER NEEDED!", L"WINDOWS VERSION ERROR", MB_OK);
+			return nRet;
+		}
+		//////////////////////////////////////////////////////////////////////////
+		HRESULT hRes = ::CoInitializeEx(NULL, COINIT_MULTITHREADED);
+		ATLASSERT(SUCCEEDED(hRes));
+		//////////////////////////////////////////////////////////////////////////
+		::DefWindowProc(NULL, 0, 0, 0L);
+		//////////////////////////////////////////////////////////////////////////
+		AtlInitCommonControls(ICC_LISTVIEW_CLASSES);
+		//////////////////////////////////////////////////////////////////////////
+		//SETUP THE REGISTRY KEY FOR THIS PROGRAMS REGISTRY SETTINGS			//
+		//////////////////////////////////////////////////////////////////////////
+		_AppSettings.SetRegKey(APPNAME_GERANIUM);
+		//////////////////////////////////////////////////////////////////////////
+		hRes = _Module.Init(NULL, hInstance);
+		ATLASSERT(SUCCEEDED(hRes));
+		//////////////////////////////////////////////////////////////////////////
+		nRet = Run(nCmdShow);
+		//////////////////////////////////////////////////////////////////////////
+		_Module.Term();
+		//////////////////////////////////////////////////////////////////////////
+		::CoUninitialize();
+		//////////////////////////////////////////////////////////////////////////
+
+	}
+	else {
+
+		//////////////////////////////////////////////////////////////////////////
+		//DO COMMAND LINE STUFF HERE											//
+		//////////////////////////////////////////////////////////////////////////
+		BOOL gotinput = FALSE;
+		BOOL gotoutput = FALSE;
+		BOOL gottype = FALSE;
+		BOOL wordsize = FALSE;
+		BOOL verilog = FALSE;
+		BOOL binary = FALSE;
+		BOOL endian = FALSE;
+		BOOL gotendian = FALSE;
+		CString input(L"");
+		CString output(L"");
+		CString arg(L"");
+		//////////////////////////////////////////////////////////////////////////
+		INT counter = 1;
+		WCHAR* char_ptr;
+		WCHAR* char_ptr_end;
+		DWORD char_len;
+		while (counter < numargs) {
+			if (wcscmp(args[counter], L"/?") == 0) {
+				PrintUsageText();
+				break;
+			}
+			if (wcscmp(args[counter], L"-w") == 0) {
+				counter += 1;
+				wordsize = TRUE;
+				continue;
+			}
+			if (wcscmp(args[counter], L"-v") == 0) {
+				counter += 1;
+				verilog = TRUE;
+				gottype = TRUE;
+				continue;
+			}
+			if (wcscmp(args[counter], L"-e") == 0) {
+				counter += 1;
+				endian = TRUE;
+				gotendian = TRUE;
+				continue;
+			}
+			if (wcscmp(args[counter], L"-b") == 0) {
+				counter += 1;
+				binary = TRUE;
+				gottype = TRUE;
+				continue;
+			}
+			if (wcscmp(args[counter], L"-i") == 0) {
+				if (counter + 1 > numargs) {
+					PrintTooFewArguments();
+					break;
+				}
+				else {
+					arg = args[counter + 1];
+					counter += 2;
+					char_len = arg.GetLength();
+					char_ptr = arg.GetBuffer(char_len);
+					char_ptr_end = char_ptr + char_len * sizeof(WCHAR);
+					input.Format(L"%s", char_ptr);
+					gotinput = TRUE;
+				}
+				continue;
+			}
+			if (wcscmp(args[counter], L"-o") == 0) {
+				if (counter + 1 > numargs) {
+					PrintTooFewArguments();
+					break;
+				}
+				else {
+					arg = args[counter + 1];
+					counter += 2;
+					char_len = arg.GetLength();
+					char_ptr = arg.GetBuffer(char_len);
+					char_ptr_end = char_ptr + char_len * sizeof(WCHAR);
+					output.Format(L"%s", char_ptr);
+					gotoutput = TRUE;
+				}
+				continue;
+			}
+			if (gotoutput == TRUE && gotinput == TRUE && gottype==TRUE) {
+				break;
+			}
+		}
+		if (gotoutput == TRUE && gotinput == TRUE && gottype == TRUE) {
+			if (ProcVerilog(output, input, binary, verilog,wordsize,endian) == FALSE) {
+				PrintProcessingError();
+			}
+			else {
+				PrintProcessingComplete();
+			}
+		}
+		//////////////////////////////////////////////////////////////////////////
+		LocalFree(args);
+		//////////////////////////////////////////////////////////////////////////
+	}
+	//////////////////////////////////////////////////////////////////////////
+	return nRet;
+	//////////////////////////////////////////////////////////////////////////
+
+}
+//////////////////////////////////////////////////////////////////////////

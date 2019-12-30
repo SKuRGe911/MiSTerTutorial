@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="MAIN">
+      <UniqueIdentifier>{3ab9fe0a-2dea-4ef0-bd63-9e0e4dc3c384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MAIN\RES">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="MAIN\ENTRY">
+      <UniqueIdentifier>{78d698d4-d545-46bd-8596-b5d15aaa2845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MAIN\PCH">
+      <UniqueIdentifier>{b7247459-fb8f-40a6-9acb-a3259afb57da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MAIN\HTL">
+      <UniqueIdentifier>{2a92c627-7078-45c5-a226-6b45acaad002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APPWINDOW">
+      <UniqueIdentifier>{49053b54-5aaf-40cd-8c53-4eaf52721caa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PROPERTYPAGES">
+      <UniqueIdentifier>{de680f2f-b436-498c-bb5e-35ffb2f916a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PROPERTYPAGES\PAGE1">
+      <UniqueIdentifier>{804f2702-2c4e-440e-9b77-b601ad817235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PROPERTYPAGES\PAGE0">
+      <UniqueIdentifier>{7a82dc0c-b209-4987-ad9c-769b62bde440}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DIALOGS">
+      <UniqueIdentifier>{953f9f49-b216-45d9-bdf1-d3440192f51c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MAIN\INCLUDE">
+      <UniqueIdentifier>{5575953f-24c7-482c-9384-3188aacaa81a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DIALOGS\LOADLISTDIALOG">
+      <UniqueIdentifier>{8f20336a-62b9-4faf-9483-30e1cd932993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DIALOGS\SAVELISTDIALOG">
+      <UniqueIdentifier>{34c5d386-e548-499d-bca4-3ab088a18ec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DIALOGS\HEADERLOADDIALOG">
+      <UniqueIdentifier>{e2ba405d-d9b7-485f-8dfd-60a3d3d4d4e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MAIN\SAVELOAD LIST">
+      <UniqueIdentifier>{e8ead2f0-02da-4ff0-be9a-901fda876252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MAIN\UTILITIES">
+      <UniqueIdentifier>{0c23883d-6be4-41d4-9cac-8d8960dbbc00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DIALOGS\OUTPUTPATHDIALOG">
+      <UniqueIdentifier>{c7f6c24f-0cf0-4cb6-af71-9475a9b0f3c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PROPERTYPAGES\PAGE2">
+      <UniqueIdentifier>{2792baeb-c387-41f4-aec4-b19fa3b44030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PROCESSING">
+      <UniqueIdentifier>{49ef2abc-c20c-482d-a368-49545282454e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PROPERTYPAGES\PAGE3">
+      <UniqueIdentifier>{e9dda8e2-d24a-40b8-8e15-c5a38d8e8ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PROPERTYPAGES\PAGE4">
+      <UniqueIdentifier>{45cf1039-522c-4bf2-bbb0-f3956eafc36c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PROPERTYPAGES\PAGE5">
+      <UniqueIdentifier>{d0899ef7-9bd7-4458-8f26-cafddfa65753}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GRNMPCH.H">
+      <Filter>MAIN\PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLDIB.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLDIBFILTERS.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLEDITLISTBOX.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLFILE.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLGDIX.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLPROPERTYITEM.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLPROPERTYITEMEDITORS.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLPROPERTYITEMIMPL.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLPROPERTYLIST.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLREGISTRY.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLRESIZE.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLSINGLE.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLSTRING.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="APPWINDOW\APPWINDOW.H">
+      <Filter>APPWINDOW</Filter>
+    </ClInclude>
+    <ClInclude Include="PROPERTYPAGES\PAGE0\PAGE0.H">
+      <Filter>PROPERTYPAGES\PAGE0</Filter>
+    </ClInclude>
+    <ClInclude Include="PROPERTYPAGES\PAGE1\PAGE1.H">
+      <Filter>PROPERTYPAGES\PAGE1</Filter>
+    </ClInclude>
+    <ClInclude Include="HTL\HTLARRAY.H">
+      <Filter>MAIN\HTL</Filter>
+    </ClInclude>
+    <ClInclude Include="GENERICFUNCTIONS.H">
+      <Filter>MAIN\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="DIALOGS\LOADLISTDIALOG\LOADLISTDIALOG.H">
+      <Filter>DIALOGS\LOADLISTDIALOG</Filter>
+    </ClInclude>
+    <ClInclude Include="DIALOGS\SAVELISTDIALOG\SAVELISTDIALOG.H">
+      <Filter>DIALOGS\SAVELISTDIALOG</Filter>
+    </ClInclude>
+    <ClInclude Include="RESOURCEDEF.H">
+      <Filter>MAIN\RES</Filter>
+    </ClInclude>
+    <ClInclude Include="SAVELOAD\SAVELOAD.H">
+      <Filter>MAIN\SAVELOAD LIST</Filter>
+    </ClInclude>
+    <ClInclude Include="UTILITIES\GROWABLEARRAY.H">
+      <Filter>MAIN\UTILITIES</Filter>
+    </ClInclude>
+    <ClInclude Include="UTILITIES\CRITICALSECTION.H">
+      <Filter>MAIN\UTILITIES</Filter>
+    </ClInclude>
+    <ClInclude Include="DIALOGS\OUTPUTPATHDIALOG\OUTPUTPATHDIALOG.H">
+      <Filter>DIALOGS\OUTPUTPATHDIALOG</Filter>
+    </ClInclude>
+    <ClInclude Include="TABLEGEN.H">
+      <Filter>MAIN\ENTRY</Filter>
+    </ClInclude>
+    <ClInclude Include="PROPERTYPAGES\PAGE2\PAGE2.H">
+      <Filter>PROPERTYPAGES\PAGE2</Filter>
+    </ClInclude>
+    <ClInclude Include="PROCESSING\PROCESSING.H">
+      <Filter>PROCESSING</Filter>
+    </ClInclude>
+    <ClInclude Include="DIALOGS\HEADERLOADDIALOG\BITMAPLOADDIALOG.H">
+      <Filter>DIALOGS\HEADERLOADDIALOG</Filter>
+    </ClInclude>
+    <ClInclude Include="PROPERTYPAGES\PAGE3\PAGE3.H">
+      <Filter>PROPERTYPAGES\PAGE3</Filter>
+    </ClInclude>
+    <ClInclude Include="PROPERTYPAGES\PAGE4\PAGE4.H">
+      <Filter>PROPERTYPAGES\PAGE4</Filter>
+    </ClInclude>
+    <ClInclude Include="PROPERTYPAGES\PAGE5\PAGE5.H">
+      <Filter>PROPERTYPAGES\PAGE5</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GRNMPCH.CPP">
+      <Filter>MAIN\PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="HTL\HTLFILE.CPP">
+      <Filter>MAIN\HTL</Filter>
+    </ClCompile>
+    <ClCompile Include="HTL\HTLSINGLE.CPP">
+      <Filter>MAIN\HTL</Filter>
+    </ClCompile>
+    <ClCompile Include="HTL\HTLSTRING.CPP">
+      <Filter>MAIN\HTL</Filter>
+    </ClCompile>
+    <ClCompile Include="APPWINDOW\APPWINDOW.CPP">
+      <Filter>APPWINDOW</Filter>
+    </ClCompile>
+    <ClCompile Include="PROPERTYPAGES\PAGE0\PAGE0.CPP">
+      <Filter>PROPERTYPAGES\PAGE0</Filter>
+    </ClCompile>
+    <ClCompile Include="PROPERTYPAGES\PAGE1\PAGE1.CPP">
+      <Filter>PROPERTYPAGES\PAGE1</Filter>
+    </ClCompile>
+    <ClCompile Include="HTL\HTLARRAY.CPP">
+      <Filter>MAIN\HTL</Filter>
+    </ClCompile>
+    <ClCompile Include="DIALOGS\LOADLISTDIALOG\LOADLISTDIALOG.CPP">
+      <Filter>DIALOGS\LOADLISTDIALOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DIALOGS\SAVELISTDIALOG\SAVELISTDIALOG.CPP">
+      <Filter>DIALOGS\SAVELISTDIALOG</Filter>
+    </ClCompile>
+    <ClCompile Include="SAVELOAD\SAVELOAD.CPP">
+      <Filter>MAIN\SAVELOAD LIST</Filter>
+    </ClCompile>
+    <ClCompile Include="UTILITIES\GROWABLEARRAY.CPP">
+      <Filter>MAIN\UTILITIES</Filter>
+    </ClCompile>
+    <ClCompile Include="UTILITIES\CRITICALSECTION.CPP">
+      <Filter>MAIN\UTILITIES</Filter>
+    </ClCompile>
+    <ClCompile Include="DIALOGS\OUTPUTPATHDIALOG\OUTPUTPATHDIALOG.CPP">
+      <Filter>DIALOGS\OUTPUTPATHDIALOG</Filter>
+    </ClCompile>
+    <ClCompile Include="TABLEGEN.CPP">
+      <Filter>MAIN\ENTRY</Filter>
+    </ClCompile>
+    <ClCompile Include="PROPERTYPAGES\PAGE2\PAGE2.CPP">
+      <Filter>PROPERTYPAGES\PAGE2</Filter>
+    </ClCompile>
+    <ClCompile Include="PROCESSING\PROC_BITMAP.CPP">
+      <Filter>PROCESSING</Filter>
+    </ClCompile>
+    <ClCompile Include="DIALOGS\HEADERLOADDIALOG\BITMAPLOADDIALOG.CPP">
+      <Filter>DIALOGS\HEADERLOADDIALOG</Filter>
+    </ClCompile>
+    <ClCompile Include="PROCESSING\SINEWAVE.CPP">
+      <Filter>PROCESSING</Filter>
+    </ClCompile>
+    <ClCompile Include="PROPERTYPAGES\PAGE3\PAGE3.CPP">
+      <Filter>PROPERTYPAGES\PAGE3</Filter>
+    </ClCompile>
+    <ClCompile Include="PROPERTYPAGES\PAGE4\PAGE4.CPP">
+      <Filter>PROPERTYPAGES\PAGE4</Filter>
+    </ClCompile>
+    <ClCompile Include="PROCESSING\LOOKUPTABLE.CPP">
+      <Filter>PROCESSING</Filter>
+    </ClCompile>
+    <ClCompile Include="PROPERTYPAGES\PAGE5\PAGE5.CPP">
+      <Filter>PROPERTYPAGES\PAGE5</Filter>
+    </ClCompile>
+    <ClCompile Include="PROCESSING\TEXTSTRING.CPP">
+      <Filter>PROCESSING</Filter>
+    </ClCompile>
+    <ClCompile Include="PROCESSING\PROC_VERILOG.CPP">
+      <Filter>PROCESSING</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RES\GERANIUMWATERMARK.BMP">
+      <Filter>MAIN\RES</Filter>
+    </Image>
+    <Image Include="RES\PAX.BMP">
+      <Filter>MAIN\RES</Filter>
+    </Image>
+    <Image Include="RES\GERANIUM.ICO">
+      <Filter>MAIN\RES</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TABLEGEN.RC">
+      <Filter>MAIN\RES</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RES\TABLEGEN.EXE.MANIFEST">
+      <Filter>MAIN\RES</Filter>
+    </None>
+  </ItemGroup>
+</Project>

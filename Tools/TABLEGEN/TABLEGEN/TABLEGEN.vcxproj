@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EA5B68D2-59B6-47DC-8F60-30FBC681D1BB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TABLEGEN</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)3RDPARTY\WTL\Include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)BIN\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)INTERMEDIATE\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>TABLEGEN</TargetName>
+    <TargetExt>.EXE</TargetExt>
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>GRNMPCH.H</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="APPWINDOW\APPWINDOW.H" />
+    <ClInclude Include="DIALOGS\HEADERLOADDIALOG\BITMAPLOADDIALOG.H" />
+    <ClInclude Include="DIALOGS\LOADLISTDIALOG\LOADLISTDIALOG.H" />
+    <ClInclude Include="DIALOGS\OUTPUTPATHDIALOG\OUTPUTPATHDIALOG.H" />
+    <ClInclude Include="DIALOGS\SAVELISTDIALOG\SAVELISTDIALOG.H" />
+    <ClInclude Include="GENERICFUNCTIONS.H" />
+    <ClInclude Include="PROCESSING\PROCESSING.H" />
+    <ClInclude Include="PROPERTYPAGES\PAGE2\PAGE2.H" />
+    <ClInclude Include="PROPERTYPAGES\PAGE3\PAGE3.H" />
+    <ClInclude Include="PROPERTYPAGES\PAGE4\PAGE4.H" />
+    <ClInclude Include="PROPERTYPAGES\PAGE5\PAGE5.H" />
+    <ClInclude Include="TABLEGEN.H" />
+    <ClInclude Include="GRNMPCH.H" />
+    <ClInclude Include="HTL\HTLARRAY.H" />
+    <ClInclude Include="HTL\HTLDIB.H" />
+    <ClInclude Include="HTL\HTLDIBFILTERS.H" />
+    <ClInclude Include="HTL\HTLEDITLISTBOX.H" />
+    <ClInclude Include="HTL\HTLFILE.H" />
+    <ClInclude Include="HTL\HTLGDIX.H" />
+    <ClInclude Include="HTL\HTLPROPERTYITEM.H" />
+    <ClInclude Include="HTL\HTLPROPERTYITEMEDITORS.H" />
+    <ClInclude Include="HTL\HTLPROPERTYITEMIMPL.H" />
+    <ClInclude Include="HTL\HTLPROPERTYLIST.H" />
+    <ClInclude Include="HTL\HTLREGISTRY.H" />
+    <ClInclude Include="HTL\HTLRESIZE.H" />
+    <ClInclude Include="HTL\HTLSINGLE.H" />
+    <ClInclude Include="HTL\HTLSTRING.H" />
+    <ClInclude Include="PROPERTYPAGES\PAGE0\PAGE0.H" />
+    <ClInclude Include="PROPERTYPAGES\PAGE1\PAGE1.H" />
+    <ClInclude Include="RESOURCEDEF.H" />
+    <ClInclude Include="SAVELOAD\SAVELOAD.H" />
+    <ClInclude Include="UTILITIES\CRITICALSECTION.H" />
+    <ClInclude Include="UTILITIES\GROWABLEARRAY.H" />
+    <None Include="RES\TABLEGEN.EXE.MANIFEST">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="APPWINDOW\APPWINDOW.CPP" />
+    <ClCompile Include="DIALOGS\HEADERLOADDIALOG\BITMAPLOADDIALOG.CPP" />
+    <ClCompile Include="DIALOGS\LOADLISTDIALOG\LOADLISTDIALOG.CPP" />
+    <ClCompile Include="DIALOGS\OUTPUTPATHDIALOG\OUTPUTPATHDIALOG.CPP" />
+    <ClCompile Include="DIALOGS\SAVELISTDIALOG\SAVELISTDIALOG.CPP" />
+    <ClCompile Include="PROCESSING\LOOKUPTABLE.CPP" />
+    <ClCompile Include="PROCESSING\PROC_BITMAP.CPP" />
+    <ClCompile Include="PROCESSING\PROC_VERILOG.CPP" />
+    <ClCompile Include="PROCESSING\SINEWAVE.CPP" />
+    <ClCompile Include="PROCESSING\TEXTSTRING.CPP" />
+    <ClCompile Include="PROPERTYPAGES\PAGE2\PAGE2.CPP" />
+    <ClCompile Include="PROPERTYPAGES\PAGE3\PAGE3.CPP" />
+    <ClCompile Include="PROPERTYPAGES\PAGE4\PAGE4.CPP" />
+    <ClCompile Include="PROPERTYPAGES\PAGE5\PAGE5.CPP" />
+    <ClCompile Include="TABLEGEN.CPP" />
+    <ClCompile Include="GRNMPCH.CPP">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="HTL\HTLARRAY.CPP" />
+    <ClCompile Include="HTL\HTLFILE.CPP" />
+    <ClCompile Include="HTL\HTLSINGLE.CPP" />
+    <ClCompile Include="HTL\HTLSTRING.CPP" />
+    <ClCompile Include="PROPERTYPAGES\PAGE0\PAGE0.CPP" />
+    <ClCompile Include="PROPERTYPAGES\PAGE1\PAGE1.CPP" />
+    <ClCompile Include="SAVELOAD\SAVELOAD.CPP" />
+    <ClCompile Include="UTILITIES\CRITICALSECTION.CPP" />
+    <ClCompile Include="UTILITIES\GROWABLEARRAY.CPP" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RES\GERANIUM.ICO" />
+    <Image Include="RES\GERANIUMWATERMARK.BMP" />
+    <Image Include="RES\PAX.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TABLEGEN.RC" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="TABLEGEN.RC" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

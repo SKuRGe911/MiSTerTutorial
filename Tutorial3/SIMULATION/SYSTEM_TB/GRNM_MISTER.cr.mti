@@ -1,0 +1,103 @@
+C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/_SYSTEM_TB.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/_SYSTEM_TB.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module _SYSTEM_TB
+
+Top level modules:
+	_SYSTEM_TB
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/avalonslavetestbench.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/avalonslavetestbench.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module avalonslavetestbench
+
+Top level modules:
+	avalonslavetestbench
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial3/SYS/pll/pll_0002.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial3/SYS/pll/pll_0002.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module pll_0002
+
+Top level modules:
+	pll_0002
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial3/SYS/pll.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial3/SYS/pll.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module pll
+
+Top level modules:
+	pll
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial3/VIDEO/video_buffer.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial3/VIDEO/video_buffer.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module video_buffer
+
+Top level modules:
+	video_buffer
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/data_io.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/data_io.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module data_io
+
+Top level modules:
+	data_io
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial3/RAM/ddram.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial3/RAM/ddram.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ddram_ctrl
+
+Top level modules:
+	ddram_ctrl
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/submodules/altera_avalon_mm_slave_bfm.sv {2 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/submodules/altera_avalon_mm_slave_bfm.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module altera_avalon_mm_slave_bfm
+-- Importing package verbosity_pkg
+-- Importing package avalon_mm_pkg
+-- Importing package avalon_utilities_pkg
+** Warning: C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/submodules/altera_avalon_mm_slave_bfm.sv(555): (vlog-2643) Unterminated string literal continues onto next line.
+** Warning: C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/submodules/altera_avalon_mm_slave_bfm.sv(563): (vlog-2643) Unterminated string literal continues onto next line.
+
+Top level modules:
+	altera_avalon_mm_slave_bfm
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/submodules/verbosity_pkg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/submodules/verbosity_pkg.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling package verbosity_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/timescale.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/timescale.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/submodules/avalon_mm_pkg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/submodules/avalon_mm_pkg.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling package avalon_mm_pkg
+-- Importing package verbosity_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/ddram_tb_sim.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/ddram_tb_sim.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ddram_tb_sim
+-- Importing package verbosity_pkg
+-- Importing package avalon_mm_pkg
+
+Top level modules:
+	ddram_tb_sim
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/submodules/avalon_utilities_pkg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial3/SIMULATION/SYSTEM_TB/submodules/avalon_utilities_pkg.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling package avalon_utilities_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial3/VIDEO/video.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial3/VIDEO/video.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module video
+
+Top level modules:
+	video
+
+} {} {}}
