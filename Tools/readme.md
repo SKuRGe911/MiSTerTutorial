@@ -1,0 +1,2 @@
+This tutorial uses the program Libav to convert a png to a raw format. I have included the program but you should look online to find out about it. The URL is http://builds.libav.org/
+The version I have included is for windows 64bit.

@@ -404,7 +404,7 @@ video_mixer
 video
 video
 (
-	.reset									(		reset													),
+	.reset									(		hardware_reset										),
 	.video_clock							(		clk_video											),
 	
 	.red										(		R														),
