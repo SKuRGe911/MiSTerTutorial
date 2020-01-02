@@ -1,0 +1,6 @@
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) video.sv ]
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) char_display.sv ]
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) pixel_multiplex.sv ]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) char_ram.qip ]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) char_rom.qip ]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) video_buffer.qip ]

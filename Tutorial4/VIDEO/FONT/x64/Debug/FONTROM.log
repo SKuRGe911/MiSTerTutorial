@@ -1,0 +1,5 @@
+﻿  mkdir fontbuild
+  riscv64-unknown-elf-gcc -c -O0 font.s -o fontbuild/font.o
+  riscv64-unknown-elf-ld -Tlinkscript.ld --oformat=srec -nostartfiles -nostdlib -o fontbuild/FONT.S68 fontbuild/font.o
+  srec_cat fontbuild/FONT.S68 -o fontbuild/FONT.mif -mif 8
+  cp -f --remove-destination fontbuild/FONT.mif ../FONT.mif
