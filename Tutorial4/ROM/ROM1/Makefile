@@ -2,7 +2,8 @@
 
 PROJECT_NAME					=	GERANIUM
 
-TOOLCHAIN_PREFIX				=	riscv-none-embed-
+TOOLCHAIN_PREFIX				=	riscv64-unknown-elf-
+#riscv-none-embed-
 
 GCC								=	$(TOOLCHAIN_PREFIX)gcc
 OBJCOPY							=	$(TOOLCHAIN_PREFIX)objcopy
@@ -69,10 +70,11 @@ all: $(PROJECT_NAME).bin $(PROJECT_NAME).hex $(PROJECT_NAME).ROM $(PROJECT_NAME)
 
 ## -------------------
 ## firmware generation
+#--specs=nano.specs
 
 $(PROJECT_NAME).elf: $(PROJECT_FILES) Makefile
 	$(GCC) \
-		-DSHIFT_COUNTER_BITS=$(FIRMWARE_COUNTER_BITS) $(CFLAGS)  --specs=nano.specs \
+		-DSHIFT_COUNTER_BITS=$(FIRMWARE_COUNTER_BITS) $(CFLAGS)  --specs=nosys.specs \
 		-o $@ $(PROJECT_FILES) \
 		-Wl,-Bstatic,-T,linkscript.lds,-Map,$(PROJECT_NAME).map,--strip-debug
 
