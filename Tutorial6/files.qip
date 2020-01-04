@@ -1,0 +1,6 @@
+set_global_assignment -name QIP_FILE SYSTEM/system.qip
+set_global_assignment -name QIP_FILE CPU/cpu.qip
+set_global_assignment -name QIP_FILE DMA/dma.qip
+set_global_assignment -name QIP_FILE RAM/ram.qip
+set_global_assignment -name QIP_FILE VIDEO/video.qip
+set_global_assignment -name QIP_FILE CONTROL/control.qip

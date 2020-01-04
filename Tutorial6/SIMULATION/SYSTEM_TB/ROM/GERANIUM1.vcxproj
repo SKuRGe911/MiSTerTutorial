@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CONSOLE\command.c" />
+    <ClCompile Include="CONSOLE\console.c" />
+    <ClCompile Include="CONSOLE\error.c" />
+    <ClCompile Include="CONSOLE\help.c" />
+    <ClCompile Include="irq.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="geranium.c" />
+    <ClCompile Include="sys\atomic.c" />
+    <ClCompile Include="sys\block_io.c" />
+    <ClCompile Include="sys\disk.c" />
+    <ClCompile Include="sys\initial.c" />
+    <ClCompile Include="sys\pff.c" />
+    <ClCompile Include="SYS\stdlib.c" />
+    <ClCompile Include="SYS\tiny-malloc.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="linkscript.lds" />
+    <None Include="Makefile" />
+    <None Include="sys\custom_ops.S" />
+    <None Include="sys\div.S" />
+    <None Include="sys\muldi3.S" />
+    <None Include="sys\save-restore.S" />
+    <None Include="sys\start.S" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="CONSOLE\console.h" />
+    <ClInclude Include="geranium.h" />
+    <ClInclude Include="sys\diskio.h" />
+    <ClInclude Include="sys\integer.h" />
+    <ClInclude Include="sys\pff.h" />
+    <ClInclude Include="sys\pffconf.h" />
+    <ClInclude Include="sys\riscv-asm.h" />
+    <ClInclude Include="sys\sfp-machine.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{88D48B3A-647F-4713-8BBE-BD90A23D7ACD}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>make clean</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

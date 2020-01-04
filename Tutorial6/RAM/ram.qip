@@ -1,0 +1,4 @@
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) ddram.sv ]
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) sdram.sv ]
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) sd_reset.sv ]
+set_global_assignment -name SDC_FILE           [file join $::quartus(qip_path) sdram.sdc ]

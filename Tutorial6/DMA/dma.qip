@@ -1,0 +1,3 @@
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) dma_cache.sv ]
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) fifo_counter.sv ]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) dma_ram.qip ]
