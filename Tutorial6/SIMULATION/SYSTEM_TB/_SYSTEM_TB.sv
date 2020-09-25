@@ -225,8 +225,8 @@ module _SYSTEM_TB;
 	// DDRAM																					//
 	///////////////////////////////////////////////////////////////////////
 
-	ddram
-	ddram
+	ddram_ctrl
+	ddram_ctrl
 	(
 		.DDRAM_CLK					(			DDRAM_CLK																			),
 		.DDRAM_BUSY					(			DDRAM_BUSY																			),

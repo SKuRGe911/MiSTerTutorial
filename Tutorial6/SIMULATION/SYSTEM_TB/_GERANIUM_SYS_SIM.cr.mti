@@ -5,6 +5,13 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	pixel_multiplexer
 
+} {} {}} C:/Github/MiSTerTutorial/Tutorial6/SYS/pll/pll_0002.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial6/SYS/pll/pll_0002.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module pll_0002
+
+Top level modules:
+	pll_0002
+
 } {} {}} C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/data_io.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/data_io.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module data_io
@@ -78,6 +85,9 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	--none--
 
+} {} {}} C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/timescale.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/timescale.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+
 } {} {}} C:/Github/MiSTerTutorial/Tutorial6/CONTROL/other_io.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial6/CONTROL/other_io.sv
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module other_io
@@ -91,9 +101,6 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
 Top level modules:
 	keyboard_io
-
-} {} {}} C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/timescale.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/timescale.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
 } {} {}} C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/ddram_tb_sim.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/ddram_tb_sim.sv
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -112,18 +119,25 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	--none--
 
-} {} {}} C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/mt48lc16m16a2.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/mt48lc16m16a2.v
+} {} {}} C:/Github/MiSTerTutorial/Tutorial6/SYS/pll.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial6/SYS/pll.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module mt48lc16m16a2
+-- Compiling module pll
 
 Top level modules:
-	mt48lc16m16a2
+	pll
 
 } {} {}} C:/Github/MiSTerTutorial/Tutorial6/SYSTEM/system_include.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial6/SYSTEM/system_include.sv
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
 Top level modules:
 	--none--
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/mt48lc16m16a2.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/mt48lc16m16a2.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module mt48lc16m16a2
+
+Top level modules:
+	mt48lc16m16a2
 
 } {} {}} C:/Github/MiSTerTutorial/Tutorial6/VIDEO/video.sv {2 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial6/VIDEO/video.sv
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -137,19 +151,27 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	video
 
-} {} {}} C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/_SYSTEM_TB.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/_SYSTEM_TB.sv
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module _SYSTEM_TB
-
-Top level modules:
-	_SYSTEM_TB
-
 } {} {}} C:/Github/MiSTerTutorial/Tutorial6/VIDEO/char_rom.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial6/VIDEO/char_rom.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module char_rom
 
 Top level modules:
 	char_rom
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial6/RAM/sdram.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial6/RAM/sdram.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module sdram
+
+Top level modules:
+	sdram
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial6/DMA/dma_cache.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial6/DMA/dma_cache.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling package dma_cache_sv_unit
+-- Compiling module dma_cache
+
+Top level modules:
+	dma_cache
 
 } {} {}} C:/Github/MiSTerTutorial/Tutorial6/CONTROL/sdcardram.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial6/CONTROL/sdcardram.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -158,19 +180,19 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	sdcardram
 
+} {} {}} C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/_SYSTEM_TB.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/_SYSTEM_TB.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module _SYSTEM_TB
+
+Top level modules:
+	_SYSTEM_TB
+
 } {} {}} C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/ROM/GERANIUM.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/ROM/GERANIUM.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module data_io_rom
 
 Top level modules:
 	data_io_rom
-
-} {} {}} C:/Github/MiSTerTutorial/Tutorial6/DMA/dma_ram.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial6/DMA/dma_ram.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module dma_ram
-
-Top level modules:
-	dma_ram
 
 } {} {}} C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/submodules/altera_avalon_mm_slave_bfm.sv {2 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial6/SIMULATION/SYSTEM_TB/submodules/altera_avalon_mm_slave_bfm.sv
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -184,12 +206,12 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	altera_avalon_mm_slave_bfm
 
-} {} {}} C:/Github/MiSTerTutorial/Tutorial6/CONTROL/io_control.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial6/CONTROL/io_control.sv
+} {} {}} C:/Github/MiSTerTutorial/Tutorial6/DMA/dma_ram.v {1 {vlog -work work -vopt -stats=none C:/Github/MiSTerTutorial/Tutorial6/DMA/dma_ram.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module io_control
+-- Compiling module dma_ram
 
 Top level modules:
-	io_control
+	dma_ram
 
 } {} {}} C:/Github/MiSTerTutorial/Tutorial6/VIDEO/video_mode_0.sv {2 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial6/VIDEO/video_mode_0.sv
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -214,6 +236,13 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
 Top level modules:
 	sdram_init
+
+} {} {}} C:/Github/MiSTerTutorial/Tutorial6/CONTROL/io_control.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial6/CONTROL/io_control.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module io_control
+
+Top level modules:
+	io_control
 
 } {} {}} C:/Github/MiSTerTutorial/Tutorial6/VIDEO/char_display.sv {1 {vlog -work work -vopt -sv -stats=none C:/Github/MiSTerTutorial/Tutorial6/VIDEO/char_display.sv
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016

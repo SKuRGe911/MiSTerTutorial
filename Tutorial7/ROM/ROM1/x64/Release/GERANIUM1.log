@@ -1,0 +1,17 @@
+﻿  rm -f GERANIUM.elf GERANIUM.map GERANIUM.bin GERANIUM.hex GERANIUM.ROM GERANIUM.v
+  riscv64-unknown-elf-gcc \
+  	-DSHIFT_COUNTER_BITS=18 -W -Wall --std=gnu99 -O1 -lgcc -mabi=ilp32 -march=rv32im -fdata-sections -ffunction-sections -funsigned-char -funsigned-bitfields -fno-diagnostics-show-caret -static -mstrict-align -ffreestanding -nostartfiles -lgloss -DF_CPU=150000000  --specs=nosys.specs \
+  	-o GERANIUM.elf main.c config.h geranium.c geranium.h irq.c ./VIDEO/video.c ./CONSOLE/help.c ./CONSOLE/command.c ./CONSOLE/console.c ./CONSOLE/console.h ./CONSOLE/error.c ./SYS/tiny-malloc.c ./SYS/disk.c ./SYS/start.S ./SYS/initial.c ./SYS/block_io.c ./SYS/pff.c ./SYS/atomic.c ./SYS/div.S ./SYS/muldi3.S ./SYS/save-restore.S ./SYS/custom_ops.S ./SYS/diskio.h ./SYS/integer.h ./SYS/pff.h ./SYS/pffconf.h ./SYS/riscv-asm.h ./SYS/sfp-machine.h \
+  	-Wl,-Bstatic,-T,linkscript.lds,-Map,GERANIUM.map,--strip-debug
+  irq.c: In function 'irq':
+irq.c(3,40): warning G40510A9C: unused parameter 'irqs' [-Wunused-parameter]
+  ./CONSOLE/console.c: In function 'print_bin_val':
+./CONSOLE/console.c(65,11): warning G5B5842FC: passing argument 1 to restrict-qualified parameter aliases with argument 4 [-Wrestrict]
+./CONSOLE/console.c(66,11): warning G5B5842FC: passing argument 1 to restrict-qualified parameter aliases with argument 4 [-Wrestrict]
+./CONSOLE/console.c(67,11): warning G5B5842FC: passing argument 1 to restrict-qualified parameter aliases with argument 4 [-Wrestrict]
+  riscv64-unknown-elf-objcopy -O binary GERANIUM.elf GERANIUM.bin --remove-section=.comment --remove-section=.note
+  chmod -x GERANIUM.bin
+  riscv64-unknown-elf-objcopy -O ihex GERANIUM.elf GERANIUM.hex
+  cp GERANIUM.bin GERANIUM.ROM
+  ../../../Tools/TABLEGEN/BIN/x64/Release/TABLEGEN.EXE -e -i GERANIUM.bin -o GERANIUM.v -v
+  Processing Complete!

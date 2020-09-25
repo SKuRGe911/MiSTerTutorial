@@ -1,0 +1,1002 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB
+T_opt
+!s110 1579663194
+VEn<b_]`YEnzDlK^F_5@Kc3
+04 10 4 work _SYSTEM_TB fast 0
+=2-00d861a2fedc-5e27bf5a-1cb-4604
+o-quiet -auto_acc_if_foreign -work work -L C:/intelFPGA/17.0/modelsim_ae/altera/verilog/altera -L C:/intelFPGA/17.0/modelsim_ae/altera/verilog/altera_lnsim -L C:/intelFPGA/17.0/modelsim_ae/altera/verilog/altera_mf -L C:/intelFPGA/17.0/modelsim_ae/altera/verilog/cyclonev -L C:/intelFPGA/17.0/modelsim_ae/altera/verilog/cyclonev_hssi -L C:/intelFPGA/17.0/modelsim_ae/altera/verilog/cyclonev_pcie_hip +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+R0
+v_SYSTEM_TB
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z3 !s110 1579679412
+!i10b 1
+!s100 N049AhPh8EPnATjBgahQ13
+IR^gB6Qm[dWI>N;]YmJ3>h3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s105 _SYSTEM_TB_sv_unit
+S1
+R0
+w1578624773
+8C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/_SYSTEM_TB.sv
+FC:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/_SYSTEM_TB.sv
+L0 3
+Z5 OL;L;10.5;63
+r1
+!s85 0
+31
+!s108 1579679411.000000
+!s107 C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/_SYSTEM_TB.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/_SYSTEM_TB.sv|
+!i113 0
+Z6 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@_@s@y@s@t@e@m_@t@b
+valtera_avalon_mm_slave_bfm
+R2
+Z7 DXx4 work 13 verbosity_pkg 0 22 DSMLH;ePMh4i6^<^kG5[A1
+Z8 DXx4 work 13 avalon_mm_pkg 0 22 L;JJ`l`jEJHe0D1X41ZR`2
+DXx4 work 20 avalon_utilities_pkg 0 22 G;3ZSF:D1^ET9fCfaLEPe1
+R3
+!i10b 1
+!s100 M@Jiof41IkAXBWChlIT>T2
+InZ81KWKd@;N>gSRz4e3Uj2
+R4
+!s105 altera_avalon_mm_slave_bfm_sv_unit
+S1
+R0
+Z9 w1578294029
+8C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/altera_avalon_mm_slave_bfm.sv
+FC:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/altera_avalon_mm_slave_bfm.sv
+L0 36
+R5
+r1
+!s85 0
+31
+Z10 !s108 1579679412.000000
+!s107 C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/altera_avalon_mm_slave_bfm.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/altera_avalon_mm_slave_bfm.sv|
+!i113 0
+R6
+R1
+Xavalon_mm_pkg
+R2
+R7
+R3
+!i10b 1
+!s100 b7iU1h5jjgJgXBW]O0>eP3
+IL;JJ`l`jEJHe0D1X41ZR`2
+VL;JJ`l`jEJHe0D1X41ZR`2
+S1
+R0
+R9
+8C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/avalon_mm_pkg.sv
+FC:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/avalon_mm_pkg.sv
+Z11 L0 40
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/avalon_mm_pkg.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/avalon_mm_pkg.sv|
+!i113 0
+R6
+R1
+Xavalon_utilities_pkg
+R2
+R3
+!i10b 1
+!s100 7Z6I@>cG<^^zXcl1Q`88O0
+IG;3ZSF:D1^ET9fCfaLEPe1
+VG;3ZSF:D1^ET9fCfaLEPe1
+S1
+R0
+R9
+8C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/avalon_utilities_pkg.sv
+FC:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/avalon_utilities_pkg.sv
+R11
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/avalon_utilities_pkg.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/avalon_utilities_pkg.sv|
+!i113 0
+R6
+R1
+vavalonslavetestbench
+R3
+!i10b 1
+!s100 6>YBaA^=ZO05WGDHn5JQ93
+IP]MT6TAlBB1ogRlFCU56`1
+R4
+R0
+R9
+8C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/avalonslavetestbench.v
+FC:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/avalonslavetestbench.v
+L0 6
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/avalonslavetestbench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/avalonslavetestbench.v|
+!i113 0
+Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vchar_ram
+Z13 !s110 1579679414
+!i10b 1
+!s100 A2TY[VfMP1jd9@GlKl^J?0
+IgBnEXf]OTaZ2IOj>>DI<[0
+R4
+R0
+w1578623792
+8C:/Github/MiSTerTutorial/Tutorial7/VIDEO/char_ram.v
+FC:/Github/MiSTerTutorial/Tutorial7/VIDEO/char_ram.v
+Z14 L0 39
+R5
+r1
+!s85 0
+31
+Z15 !s108 1579679414.000000
+!s107 C:/Github/MiSTerTutorial/Tutorial7/VIDEO/char_ram.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/VIDEO/char_ram.v|
+!i113 0
+R12
+R1
+vchar_rom
+R13
+!i10b 1
+!s100 S9YOMk?=oLHbRN13MS_c62
+IZIfank4Olm0`AUg_c6<<<0
+R4
+R0
+w1578623799
+8C:/Github/MiSTerTutorial/Tutorial7/VIDEO/char_rom.v
+FC:/Github/MiSTerTutorial/Tutorial7/VIDEO/char_rom.v
+R14
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Github/MiSTerTutorial/Tutorial7/VIDEO/char_rom.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/VIDEO/char_rom.v|
+!i113 0
+R12
+R1
+vcharacter_display
+R2
+R13
+!i10b 1
+!s100 FEWY]cgfnEb=MIEW_Vf?F1
+Ib2]MXajW5?b5gHBCPcWA91
+R4
+!s105 char_display_sv_unit
+S1
+R0
+R9
+8C:/Github/MiSTerTutorial/Tutorial7/VIDEO/char_display.sv
+FC:/Github/MiSTerTutorial/Tutorial7/VIDEO/char_display.sv
+L0 8
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Github/MiSTerTutorial/Tutorial7/VIDEO/char_display.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/VIDEO/char_display.sv|
+!i113 0
+R6
+R1
+vdata_io
+R3
+!i10b 1
+!s100 mMR<64m1>ZJz0Cz4IYQ_Z1
+ILVYg?[gm=cei=<cXXDk9l0
+R4
+R0
+R9
+8C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/data_io.v
+FC:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/data_io.v
+L0 9
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/data_io.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/data_io.v|
+!i113 0
+R12
+R1
+vdata_io_rom
+!s110 1579679415
+!i10b 1
+!s100 ;6;on=c@n:K>Wc^=GdOel2
+IaJ98_8PG3k?CnRckWQd>:3
+R4
+R0
+w1578625183
+8C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/ROM/GERANIUM.v
+FC:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/ROM/GERANIUM.v
+L0 4
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/ROM/GERANIUM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/ROM/GERANIUM.v|
+!i113 0
+R12
+R1
+vddram_ctrl
+R2
+Z16 !s110 1579679413
+!i10b 1
+!s100 bcFcCZdFFHKQRa<PB]j3:0
+If?EYn7KGdNaSGhQB?bYCF1
+R4
+!s105 ddram_sv_unit
+S1
+R0
+Z17 w1578294028
+8C:/Github/MiSTerTutorial/Tutorial7/RAM/ddram.sv
+FC:/Github/MiSTerTutorial/Tutorial7/RAM/ddram.sv
+L0 8
+R5
+r1
+!s85 0
+31
+Z18 !s108 1579679413.000000
+!s107 C:/Github/MiSTerTutorial/Tutorial7/RAM/ddram.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/RAM/ddram.sv|
+!i113 0
+R6
+R1
+vddram_tb_sim
+R2
+R7
+R8
+R3
+!i10b 1
+!s100 <=5o=cak4^U6nb==f<jFZ0
+Iz0fRMlV]@ga_9fCE4lVH@2
+R4
+!s105 ddram_tb_sim_sv_unit
+S1
+R0
+R9
+8C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/ddram_tb_sim.sv
+FC:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/ddram_tb_sim.sv
+L0 4
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/ddram_tb_sim.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/ddram_tb_sim.sv|
+!i113 0
+R6
+R1
+vdma_cache
+R2
+DXx4 work 17 dma_cache_sv_unit 0 22 [dWXcHR[XR]3caKh7`<403
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 CblKPQ>R;a473F@HYjWCn3
+IN^A?j;7Gk_WK4GbYMP^602
+!s105 dma_cache_sv_unit
+S1
+R0
+R17
+Z19 8C:/Github/MiSTerTutorial/Tutorial7/DMA/dma_cache.sv
+Z20 FC:/Github/MiSTerTutorial/Tutorial7/DMA/dma_cache.sv
+Z21 L0 12
+R5
+R18
+Z22 !s107 C:\Github\MiSTerTutorial\Tutorial7\DMA\..\SYSTEM\system_include.sv|C:/Github/MiSTerTutorial/Tutorial7/DMA/dma_cache.sv|
+Z23 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/DMA/dma_cache.sv|
+!i113 0
+R6
+R1
+Xdma_cache_sv_unit
+R2
+V[dWXcHR[XR]3caKh7`<403
+r1
+!s85 0
+31
+!i10b 1
+!s100 Ljne4km<f5jchDJl]=IbE2
+I[dWXcHR[XR]3caKh7`<403
+!i103 1
+S1
+R0
+R9
+R19
+R20
+FC:\Github\MiSTerTutorial\Tutorial7\DMA\..\SYSTEM\system_include.sv
+Z24 L0 14
+R5
+R18
+R22
+R23
+!i113 0
+R6
+R1
+vdma_ram
+R16
+!i10b 1
+!s100 Ln]AG=[YWSL;fXF<kHbh:2
+I[ZB[:KfB:cNO1P?K>1J<f0
+R4
+R0
+R17
+8C:/Github/MiSTerTutorial/Tutorial7/DMA/dma_ram.v
+FC:/Github/MiSTerTutorial/Tutorial7/DMA/dma_ram.v
+R14
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Github/MiSTerTutorial/Tutorial7/DMA/dma_ram.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/DMA/dma_ram.v|
+!i113 0
+R12
+R1
+vfifo_counter
+R2
+R16
+!i10b 1
+!s100 SO@<8?EZfOBlEUU>9bLXN1
+I7oeEU2d`T>::;9QTj4mLk1
+R4
+!s105 fifo_counter_sv_unit
+S1
+R0
+R17
+8C:/Github/MiSTerTutorial/Tutorial7/DMA/fifo_counter.sv
+FC:/Github/MiSTerTutorial/Tutorial7/DMA/fifo_counter.sv
+L0 8
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Github/MiSTerTutorial/Tutorial7/DMA/fifo_counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/DMA/fifo_counter.sv|
+!i113 0
+R6
+R1
+vgeranium_system
+R2
+DXx4 work 21 system_module_sv_unit 0 22 1n:Ai5Z??Vb4E<IEG@JGh3
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 9gU6[l<b3137^KoMnJ=bd3
+ING2c=[IQ7h70Lih5O9BS=3
+!s105 system_module_sv_unit
+S1
+R0
+Z25 w1578625265
+Z26 8C:/Github/MiSTerTutorial/Tutorial7/SYSTEM/system_module.sv
+Z27 FC:/Github/MiSTerTutorial/Tutorial7/SYSTEM/system_module.sv
+R21
+R5
+R15
+Z28 !s107 C:\Github\MiSTerTutorial\Tutorial7\SYSTEM\..\SYSTEM\system_include.sv|C:/Github/MiSTerTutorial/Tutorial7/SYSTEM/system_module.sv|
+Z29 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SYSTEM/system_module.sv|
+!i113 0
+R6
+R1
+vinterupts
+R2
+R3
+!i10b 1
+!s100 ND[Q`d8:ck3J=zjaTFDcl2
+IHR60WgN[43Kh?fUU9H8cQ1
+R4
+!s105 interupts_sv_unit
+S1
+R0
+R17
+8C:/Github/MiSTerTutorial/Tutorial7/CONTROL/interupts.sv
+FC:/Github/MiSTerTutorial/Tutorial7/CONTROL/interupts.sv
+L0 7
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Github/MiSTerTutorial/Tutorial7/CONTROL/interupts.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/CONTROL/interupts.sv|
+!i113 0
+R6
+R1
+vio_control
+R2
+R16
+!i10b 1
+!s100 fKRncKl]Va^2JjW6KM0_;1
+IIYHITgHT?Jo>G_6g0C1Om2
+R4
+!s105 io_control_sv_unit
+S1
+R0
+w1578625257
+8C:/Github/MiSTerTutorial/Tutorial7/CONTROL/io_control.sv
+FC:/Github/MiSTerTutorial/Tutorial7/CONTROL/io_control.sv
+L0 8
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Github/MiSTerTutorial/Tutorial7/CONTROL/io_control.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/CONTROL/io_control.sv|
+!i113 0
+R6
+R1
+vkeyboard_io
+R2
+R16
+!i10b 1
+!s100 Q0fVedN?lj@QDLgHfT2`a3
+I3mD[^SilS6c7KTP45EcUg0
+R4
+!s105 keyboard_sv_unit
+S1
+R0
+R17
+8C:/Github/MiSTerTutorial/Tutorial7/CONTROL/keyboard.sv
+FC:/Github/MiSTerTutorial/Tutorial7/CONTROL/keyboard.sv
+L0 8
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Github/MiSTerTutorial/Tutorial7/CONTROL/keyboard.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/CONTROL/keyboard.sv|
+!i113 0
+R6
+R1
+vmode_0_video
+R2
+DXx4 work 20 video_mode_0_sv_unit 0 22 ^gGlda6BXVTdN10B9KV8z1
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 SCLj:Sbzn<JLYVC5cP5S:3
+I?8lNl^RBij3BaM;<8zT;C1
+!s105 video_mode_0_sv_unit
+S1
+R0
+Z30 w1578625244
+Z31 8C:/Github/MiSTerTutorial/Tutorial7/VIDEO/video_mode_0.sv
+Z32 FC:/Github/MiSTerTutorial/Tutorial7/VIDEO/video_mode_0.sv
+R21
+R5
+R15
+Z33 !s107 C:\Github\MiSTerTutorial\Tutorial7\VIDEO\..\SYSTEM\system_include.sv|C:/Github/MiSTerTutorial/Tutorial7/VIDEO/video_mode_0.sv|
+Z34 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/VIDEO/video_mode_0.sv|
+!i113 0
+R6
+R1
+vmt48lc16m16a2
+R3
+!i10b 1
+!s100 ]f[6emKNeN]1QFZDoOkn50
+ImFbVeVoSk[o<M]AR=z1[<3
+R4
+R0
+R9
+8C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/mt48lc16m16a2.v
+FC:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/mt48lc16m16a2.v
+L0 51
+R5
+r1
+!s85 0
+31
+R10
+!s107 timescale.v|C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/mt48lc16m16a2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/mt48lc16m16a2.v|
+!i113 0
+R12
+R1
+vother_io
+R2
+R16
+!i10b 1
+!s100 ZFZIz>iQlFe34I:F?d5Ck0
+I3:ChNgNKL<77>W>m?]M`O0
+R4
+!s105 other_io_sv_unit
+S1
+R0
+R17
+8C:/Github/MiSTerTutorial/Tutorial7/CONTROL/other_io.sv
+FC:/Github/MiSTerTutorial/Tutorial7/CONTROL/other_io.sv
+L0 6
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Github/MiSTerTutorial/Tutorial7/CONTROL/other_io.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/CONTROL/other_io.sv|
+!i113 0
+R6
+R1
+vpicorv32
+R16
+!i10b 1
+!s100 N5aW>P0zHI7:dLggEfMW20
+ImV?h2h[=SY<lNo527SkbQ0
+R4
+R0
+Z35 w1579663183
+Z36 8C:/Github/MiSTerTutorial/Tutorial7/CPU/picorv32.v
+Z37 FC:/Github/MiSTerTutorial/Tutorial7/CPU/picorv32.v
+L0 62
+R5
+r1
+!s85 0
+31
+R18
+Z38 !s107 C:/Github/MiSTerTutorial/Tutorial7/CPU/picorv32.v|
+Z39 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/CPU/picorv32.v|
+!i113 0
+R12
+R1
+vpicorv32_axi
+R16
+!i10b 1
+!s100 4MQ1QJ4f^5RIl>G@B6h7X2
+IAZ>OAc:cZ3?fHT0:SJ5co1
+R4
+R0
+R35
+R36
+R37
+L0 2511
+R5
+r1
+!s85 0
+31
+R18
+R38
+R39
+!i113 0
+R12
+R1
+vpicorv32_axi_adapter
+R16
+!i10b 1
+!s100 1cDO5A7`HB3M<K30fGVbn1
+IBNPH@VlQD8mW0=b2aXVhW3
+R4
+R0
+R35
+R36
+R37
+L0 2725
+R5
+r1
+!s85 0
+31
+R18
+R38
+R39
+!i113 0
+R12
+R1
+vpicorv32_pcpi_div
+R16
+!i10b 1
+!s100 NC2VVb`Rc2B@[T<599Y6>2
+IfE1YNLCaNSIlfijhm>Nm^3
+R4
+R0
+R35
+R36
+R37
+L0 2414
+R5
+r1
+!s85 0
+31
+R18
+R38
+R39
+!i113 0
+R12
+R1
+vpicorv32_pcpi_fast_mul
+R16
+!i10b 1
+!s100 EjOffhjTOzMz4@Gjz3d7g2
+IEQ[DAX6d]Vk5Sm0_LDG;G0
+R4
+R0
+R35
+R36
+R37
+L0 2312
+R5
+r1
+!s85 0
+31
+R18
+R38
+R39
+!i113 0
+R12
+R1
+vpicorv32_pcpi_mul
+R16
+!i10b 1
+!s100 H;TSaA1c1P6i:bhJ@MD;I1
+IOo0YYjQ3fhGgPiX2g;eB02
+R4
+R0
+R35
+R36
+R37
+L0 2191
+R5
+r1
+!s85 0
+31
+R18
+R38
+R39
+!i113 0
+R12
+R1
+vpicorv32_regs
+R16
+!i10b 1
+!s100 >0PfVKV?H82zTog>_jVnk0
+IegDWBBz3PK^z2Y3]<lzB73
+R4
+R0
+R35
+R36
+R37
+L0 2168
+R5
+r1
+!s85 0
+31
+R18
+R38
+R39
+!i113 0
+R12
+R1
+vpicorv32_wb
+R16
+!i10b 1
+!s100 Olmbo;bR8=3o8QVjiKEeQ3
+I3U:cDdh[RIDcLZIn67zhV3
+R4
+R0
+R35
+R36
+R37
+L0 2809
+R5
+r1
+!s85 0
+31
+R18
+R38
+R39
+!i113 0
+R12
+R1
+vpixel_multiplexer
+R2
+R13
+!i10b 1
+!s100 B:V2O33lMV?W>3]bP>lYD3
+IHHb:X6@K1i@UR^<GIZ3zF2
+R4
+!s105 pixel_multiplex_sv_unit
+S1
+R0
+w1578295229
+8C:/Github/MiSTerTutorial/Tutorial7/VIDEO/pixel_multiplex.sv
+FC:/Github/MiSTerTutorial/Tutorial7/VIDEO/pixel_multiplex.sv
+L0 8
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Github/MiSTerTutorial/Tutorial7/VIDEO/pixel_multiplex.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/VIDEO/pixel_multiplex.sv|
+!i113 0
+R6
+R1
+vpll
+R16
+!i10b 1
+!s100 o`<Ynl2:fA`4_JVLA<3WX3
+I`@b>TzVKZJC]75K5XNSZO3
+R4
+R0
+w1578301188
+8C:/Github/MiSTerTutorial/Tutorial7/SYS/pll.v
+FC:/Github/MiSTerTutorial/Tutorial7/SYS/pll.v
+L0 8
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Github/MiSTerTutorial/Tutorial7/SYS/pll.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SYS/pll.v|
+!i113 0
+R12
+R1
+vpll_0002
+R16
+!i10b 1
+!s100 @INKCeo8c_;P]I`KZ5^GQ3
+ICHQU^eD2KK^fNToZYTLNI3
+R4
+R0
+w1578301171
+8C:/Github/MiSTerTutorial/Tutorial7/SYS/pll/pll_0002.v
+FC:/Github/MiSTerTutorial/Tutorial7/SYS/pll/pll_0002.v
+L0 2
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Github/MiSTerTutorial/Tutorial7/SYS/pll/pll_0002.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SYS/pll/pll_0002.v|
+!i113 0
+R12
+R1
+vsdcardram
+R3
+!i10b 1
+!s100 OlmeAMiS89cS@cgR`9SQW1
+I9mQ:i[2FXnV^`lE>FLo@g2
+R4
+R0
+R17
+8C:/Github/MiSTerTutorial/Tutorial7/CONTROL/sdcardram.v
+FC:/Github/MiSTerTutorial/Tutorial7/CONTROL/sdcardram.v
+R14
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Github/MiSTerTutorial/Tutorial7/CONTROL/sdcardram.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/CONTROL/sdcardram.v|
+!i113 0
+R12
+R1
+vsdram
+R2
+R16
+!i10b 1
+!s100 b3cDe^^]@7@_UTlE7hWBc1
+I26<Hk;M7QKQ]R@M0FMg<O0
+R4
+!s105 sdram_sv_unit
+S1
+R0
+R17
+8C:/Github/MiSTerTutorial/Tutorial7/RAM/sdram.sv
+FC:/Github/MiSTerTutorial/Tutorial7/RAM/sdram.sv
+L0 8
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Github/MiSTerTutorial/Tutorial7/RAM/sdram.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/RAM/sdram.sv|
+!i113 0
+R6
+R1
+vsdram_init
+R2
+R16
+!i10b 1
+!s100 nF=^3NPKe_@b3dTziQn;h0
+I6dG>WdH?Y@X7cjjkiKKSZ2
+R4
+!s105 sd_reset_sv_unit
+S1
+R0
+R17
+8C:/Github/MiSTerTutorial/Tutorial7/RAM/sd_reset.sv
+FC:/Github/MiSTerTutorial/Tutorial7/RAM/sd_reset.sv
+L0 7
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Github/MiSTerTutorial/Tutorial7/RAM/sd_reset.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/RAM/sd_reset.sv|
+!i113 0
+R6
+R1
+Xsystem_include_sv_unit
+R2
+R13
+!i10b 1
+!s100 Kb5INBV4mAm@<I?KV0CB10
+IE7[jjCDFS4;GjB][d[QE^1
+VE7[jjCDFS4;GjB][d[QE^1
+!i103 1
+S1
+R0
+R9
+8C:/Github/MiSTerTutorial/Tutorial7/SYSTEM/system_include.sv
+FC:/Github/MiSTerTutorial/Tutorial7/SYSTEM/system_include.sv
+R24
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Github/MiSTerTutorial/Tutorial7/SYSTEM/system_include.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SYSTEM/system_include.sv|
+!i113 0
+R6
+R1
+Xsystem_module_sv_unit
+R2
+V1n:Ai5Z??Vb4E<IEG@JGh3
+r1
+!s85 0
+31
+!i10b 1
+!s100 Ll<@W10PGg[VS30g4:ZII3
+I1n:Ai5Z??Vb4E<IEG@JGh3
+!i103 1
+S1
+R0
+R25
+R26
+R27
+FC:\Github\MiSTerTutorial\Tutorial7\SYSTEM\..\SYSTEM\system_include.sv
+R24
+R5
+R15
+R28
+R29
+!i113 0
+R6
+R1
+Xverbosity_pkg
+R2
+R3
+!i10b 1
+!s100 1LKXk98oFzia^4f:_THR]1
+IDSMLH;ePMh4i6^<^kG5[A1
+VDSMLH;ePMh4i6^<^kG5[A1
+S1
+R0
+R9
+8C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/verbosity_pkg.sv
+FC:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/verbosity_pkg.sv
+L0 61
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/verbosity_pkg.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/SIMULATION/SYSTEM_TB/submodules/verbosity_pkg.sv|
+!i113 0
+R6
+R1
+vvideo
+R2
+DXx4 work 13 video_sv_unit 0 22 cU=Dh<dGTIV^bd4@Ejk>E1
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 =fHkNzP_@NR8A3XfaAk<=2
+ImibJJUc>N2aO9BI727<Lo1
+!s105 video_sv_unit
+S1
+R0
+Z40 w1578625235
+Z41 8C:/Github/MiSTerTutorial/Tutorial7/VIDEO/video.sv
+Z42 FC:/Github/MiSTerTutorial/Tutorial7/VIDEO/video.sv
+R21
+R5
+R15
+Z43 !s107 C:\Github\MiSTerTutorial\Tutorial7\VIDEO\..\SYSTEM\system_include.sv|C:/Github/MiSTerTutorial/Tutorial7/VIDEO/video.sv|
+Z44 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Github/MiSTerTutorial/Tutorial7/VIDEO/video.sv|
+!i113 0
+R6
+R1
+Xvideo_mode_0_sv_unit
+R2
+V^gGlda6BXVTdN10B9KV8z1
+r1
+!s85 0
+31
+!i10b 1
+!s100 WUU[_7mo1F`=QgJizVPSh3
+I^gGlda6BXVTdN10B9KV8z1
+!i103 1
+S1
+R0
+R30
+R31
+R32
+Z45 FC:\Github\MiSTerTutorial\Tutorial7\VIDEO\..\SYSTEM\system_include.sv
+R24
+R5
+R15
+R33
+R34
+!i113 0
+R6
+R1
+Xvideo_sv_unit
+R2
+VcU=Dh<dGTIV^bd4@Ejk>E1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ]ElNS8R0[1FEZN5mBBoA=2
+IcU=Dh<dGTIV^bd4@Ejk>E1
+!i103 1
+S1
+R0
+R40
+R41
+R42
+R45
+R24
+R5
+R15
+R43
+R44
+!i113 0
+R6
+R1

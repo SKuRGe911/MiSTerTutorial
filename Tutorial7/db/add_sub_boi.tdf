@@ -1,0 +1,49 @@
+--lpm_add_sub CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48 DEVICE_FAMILY="Cyclone V" LPM_DIRECTION="DEFAULT" LPM_REPRESENTATION="UNSIGNED" LPM_WIDTH=32 ONE_INPUT_IS_CONSTANT="NO" add_sub dataa datab result
+--VERSION_BEGIN 17.1 cbx_cycloneii 2017:10:25:18:06:53:SJ cbx_lpm_add_sub 2017:10:25:18:06:53:SJ cbx_mgl 2017:10:25:18:08:29:SJ cbx_nadder 2017:10:25:18:06:53:SJ cbx_stratix 2017:10:25:18:06:53:SJ cbx_stratixii 2017:10:25:18:06:53:SJ  VERSION_END
+
+
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+--  Your use of Intel Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Intel Program License 
+--  Subscription Agreement, the Intel Quartus Prime License Agreement,
+--  the Intel FPGA IP License Agreement, or other applicable license
+--  agreement, including, without limitation, that your use is for
+--  the sole purpose of programming logic devices manufactured by
+--  Intel and sold by Intel or its authorized distributors.  Please
+--  refer to the applicable agreement for further details.
+
+
+FUNCTION cyclonev_lcell_comb (cin, dataa, datab, datac, datad, datae, dataf, datag, sharein)
+WITH ( DONT_TOUCH, EXTENDED_LUT, LUT_MASK, SHARED_ARITH)
+RETURNS ( combout, cout, shareout, sumout);
+
+--synthesis_resources = lut 32 
+SUBDESIGN add_sub_boi
+( 
+	add_sub	:	input;
+	dataa[31..0]	:	input;
+	datab[31..0]	:	input;
+	result[31..0]	:	output;
+) 
+VARIABLE 
+	add_sub_cella[31..0] : cyclonev_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "00000FF00000FF00",
+			SHARED_ARITH = "off"
+		);
+	lsb_cin_wire[0..0]	: WIRE;
+
+BEGIN 
+	add_sub_cella[].cin = ( add_sub_cella[30..0].cout, lsb_cin_wire[]);
+	add_sub_cella[].datac = add_sub;
+	add_sub_cella[].datad = dataa[];
+	add_sub_cella[].dataf = datab[];
+	lsb_cin_wire[] = (! add_sub);
+	result[] = ( add_sub_cella[31..0].sumout);
+END;
+--VALID FILE

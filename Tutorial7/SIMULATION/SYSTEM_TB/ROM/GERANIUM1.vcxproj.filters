@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="sys\div.S">
+      <Filter>SYS</Filter>
+    </None>
+    <None Include="sys\muldi3.S">
+      <Filter>SYS</Filter>
+    </None>
+    <None Include="sys\save-restore.S">
+      <Filter>SYS</Filter>
+    </None>
+    <None Include="sys\start.S">
+      <Filter>SYS</Filter>
+    </None>
+    <None Include="sys\custom_ops.S">
+      <Filter>SYS</Filter>
+    </None>
+    <None Include="linkscript.lds" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sys\atomic.c">
+      <Filter>SYS</Filter>
+    </ClCompile>
+    <ClCompile Include="geranium.c" />
+    <ClCompile Include="sys\block_io.c">
+      <Filter>SYS</Filter>
+    </ClCompile>
+    <ClCompile Include="sys\pff.c">
+      <Filter>SYS</Filter>
+    </ClCompile>
+    <ClCompile Include="sys\initial.c">
+      <Filter>SYS</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c" />
+    <ClCompile Include="sys\disk.c">
+      <Filter>SYS</Filter>
+    </ClCompile>
+    <ClCompile Include="irq.c" />
+    <ClCompile Include="CONSOLE\console.c">
+      <Filter>CONSOLE</Filter>
+    </ClCompile>
+    <ClCompile Include="SYS\tiny-malloc.c">
+      <Filter>SYS</Filter>
+    </ClCompile>
+    <ClCompile Include="CONSOLE\error.c">
+      <Filter>CONSOLE</Filter>
+    </ClCompile>
+    <ClCompile Include="SYS\stdlib.c">
+      <Filter>SYS</Filter>
+    </ClCompile>
+    <ClCompile Include="CONSOLE\command.c">
+      <Filter>CONSOLE</Filter>
+    </ClCompile>
+    <ClCompile Include="CONSOLE\help.c">
+      <Filter>CONSOLE</Filter>
+    </ClCompile>
+    <ClCompile Include="VIDEO\video.c">
+      <Filter>VIDEO</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sys\riscv-asm.h">
+      <Filter>SYS</Filter>
+    </ClInclude>
+    <ClInclude Include="sys\sfp-machine.h">
+      <Filter>SYS</Filter>
+    </ClInclude>
+    <ClInclude Include="geranium.h" />
+    <ClInclude Include="sys\diskio.h">
+      <Filter>SYS</Filter>
+    </ClInclude>
+    <ClInclude Include="sys\integer.h">
+      <Filter>SYS</Filter>
+    </ClInclude>
+    <ClInclude Include="sys\pff.h">
+      <Filter>SYS</Filter>
+    </ClInclude>
+    <ClInclude Include="sys\pffconf.h">
+      <Filter>SYS</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="CONSOLE\console.h">
+      <Filter>CONSOLE</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CONSOLE">
+      <UniqueIdentifier>{674d0e7c-274f-44ac-bebe-ebbaa7f71540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SYS">
+      <UniqueIdentifier>{767b9ef4-243b-49c2-b1c0-828a05f946ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VIDEO">
+      <UniqueIdentifier>{13c83ea6-eec3-42b8-b040-3b7107a60221}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
